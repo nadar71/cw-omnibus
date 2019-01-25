@@ -39,6 +39,7 @@ public class SpinnerDemo extends Activity
     selection=(TextView)findViewById(R.id.selection);
     
     Spinner spin=(Spinner)findViewById(R.id.spinner);
+    // spin.
     spin.setOnItemSelectedListener(this);
     
     ArrayAdapter<String> aa=new ArrayAdapter<String>(this,
@@ -48,6 +49,7 @@ public class SpinnerDemo extends Activity
     aa.setDropDownViewResource(
       android.R.layout.simple_spinner_dropdown_item);
     spin.setAdapter(aa);
+
   }
   
   @Override
